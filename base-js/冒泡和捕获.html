@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>冒泡和捕获 | Jovi&#39;s Blob</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.5ab8ebd7.css" as="style"><link rel="preload" href="/assets/js/app.b29b5145.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/12.58334010.js" as="script"><link rel="prefetch" href="/assets/js/10.922a32c7.js"><link rel="prefetch" href="/assets/js/11.c5801702.js"><link rel="prefetch" href="/assets/js/13.893681b3.js"><link rel="prefetch" href="/assets/js/14.86d64857.js"><link rel="prefetch" href="/assets/js/15.429f9a6f.js"><link rel="prefetch" href="/assets/js/16.b35a16f8.js"><link rel="prefetch" href="/assets/js/17.9b2cc116.js"><link rel="prefetch" href="/assets/js/18.d9e13794.js"><link rel="prefetch" href="/assets/js/19.bab7a1b4.js"><link rel="prefetch" href="/assets/js/20.7612f050.js"><link rel="prefetch" href="/assets/js/21.7e9dafa8.js"><link rel="prefetch" href="/assets/js/22.c34b9771.js"><link rel="prefetch" href="/assets/js/23.b411cec4.js"><link rel="prefetch" href="/assets/js/24.fd41c7f8.js"><link rel="prefetch" href="/assets/js/3.e9d031a5.js"><link rel="prefetch" href="/assets/js/4.fc333d27.js"><link rel="prefetch" href="/assets/js/5.bfef3080.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.deaf0277.js"><link rel="prefetch" href="/assets/js/8.165d2e96.js"><link rel="prefetch" href="/assets/js/9.fa0cf2f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5ab8ebd7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jovi's Blob</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/b.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  todo
+</a></li><li class="dropdown-item"><!----> <a href="/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  todo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/b.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  todo
+</a></li><li class="dropdown-item"><!----> <a href="/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  todo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Javascript基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/base-js/原型和原型链.html" class="sidebar-link">原型和原型链</a></li><li><a href="/base-js/堆和栈.html" class="sidebar-link">堆和栈</a></li><li><a href="/base-js/闭包.html" class="sidebar-link">闭包</a></li><li><a href="/base-js/冒泡和捕获.html" class="active sidebar-link">冒泡和捕获</a></li><li><a href="/base-js/Promise.html" class="sidebar-link">Promise</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>关于前端框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具方法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>一点儿思考</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="冒泡和捕获"><a href="#冒泡和捕获" class="header-anchor">#</a> 冒泡和捕获</h2> <p>js的事件流分为三个阶段：捕获阶段、目标阶段、冒泡阶段</p> <ul><li>捕获阶段：事件从window开始，逐级向下传播，直到达到目标元素</li> <li>目标阶段：事件到达目标元素</li> <li>冒泡阶段：事件从目标元素开始，逐级向上传播，直到到达window</li></ul> <blockquote><p>触发顺序：捕获阶段 -&gt; 目标阶段 -&gt; 冒泡阶段</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 事件捕获</span>
+element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'捕获阶段：'</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 事件冒泡</span>
+element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'冒泡阶段：'</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>默认情况下，事件会从window开始，逐级向下传播，直到达到目标元素，然后从目标元素开始，逐级向上传播，直到到达window。这个过程就是事件冒泡。</p></blockquote> <h3 id="js事件委托"><a href="#js事件委托" class="header-anchor">#</a> js事件委托</h3> <p>事件委托是一种利用事件冒泡原理，将事件处理程序添加到父元素上，通过判断事件的目标元素来执行相应的事件处理程序的技术。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 事件委托</span>
+ul<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>tagName<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'li'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击了li元素：'</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>事件委托的优点：</p></blockquote> <ol><li>减少事件处理程序的数量，提高性能</li> <li>动态添加的元素也可以绑定事件处理程序</li> <li>可以方便地实现事件委托的取消</li></ol> <blockquote><p>事件委托的缺点：</p></blockquote> <ol><li>事件委托只能处理冒泡阶段的事件，无法处理捕获阶段的事件</li> <li>事件委托需要判断事件的目标元素，增加了代码的复杂性</li> <li>事件委托无法处理事件冒泡过程中被阻止的事件</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/base-js/闭包.html" class="prev">
+        闭包
+      </a></span> <span class="next"><a href="/base-js/Promise.html">
+        Promise
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b29b5145.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/12.58334010.js" defer></script>
+  </body>
+</html>
