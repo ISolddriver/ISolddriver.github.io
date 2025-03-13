@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>两数之和 | Jovi&#39;s Blob</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.621b4cb4.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/17.5f96f4b0.js" as="script"><link rel="prefetch" href="/assets/js/10.f3bd8531.js"><link rel="prefetch" href="/assets/js/11.946414bb.js"><link rel="prefetch" href="/assets/js/12.6d983455.js"><link rel="prefetch" href="/assets/js/13.9dddf02c.js"><link rel="prefetch" href="/assets/js/14.6c53b87f.js"><link rel="prefetch" href="/assets/js/15.46807a68.js"><link rel="prefetch" href="/assets/js/16.1c75f5b8.js"><link rel="prefetch" href="/assets/js/18.5a5d6da9.js"><link rel="prefetch" href="/assets/js/19.792f2a75.js"><link rel="prefetch" href="/assets/js/20.5565456f.js"><link rel="prefetch" href="/assets/js/21.7b31f6f0.js"><link rel="prefetch" href="/assets/js/22.903f8882.js"><link rel="prefetch" href="/assets/js/23.180e3d14.js"><link rel="prefetch" href="/assets/js/24.fd65a104.js"><link rel="prefetch" href="/assets/js/25.83c21a79.js"><link rel="prefetch" href="/assets/js/26.639f881d.js"><link rel="prefetch" href="/assets/js/27.6ccceb19.js"><link rel="prefetch" href="/assets/js/28.772ca3c3.js"><link rel="prefetch" href="/assets/js/29.eab5160b.js"><link rel="prefetch" href="/assets/js/3.d57df74c.js"><link rel="prefetch" href="/assets/js/30.aa4ed83d.js"><link rel="prefetch" href="/assets/js/31.1fd15427.js"><link rel="prefetch" href="/assets/js/32.4de5ee80.js"><link rel="prefetch" href="/assets/js/33.76e033cb.js"><link rel="prefetch" href="/assets/js/34.05ad94ab.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.1b3622c2.js"><link rel="prefetch" href="/assets/js/8.06f3501d.js"><link rel="prefetch" href="/assets/js/9.cd62a737.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jovi's Blob</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/b.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  todo
+</a></li><li class="dropdown-item"><!----> <a href="/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  todo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="/b.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  todo
+</a></li><li class="dropdown-item"><!----> <a href="/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  todo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>关于前端框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具方法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>一点儿思考</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>leetcode算法</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/base-leetcode/合并两个有序数组.html" class="sidebar-link">合并两个有序数组</a></li><li><a href="/base-leetcode/两数之和.html" class="active sidebar-link">两数之和</a></li><li><a href="/base-leetcode/判断子序列.html" class="sidebar-link">判断子序列</a></li><li><a href="/base-leetcode/删除有序数组中的重复项.html" class="sidebar-link">删除有序数组中的重复项</a></li><li><a href="/base-leetcode/验证回文串.html" class="sidebar-link">验证回文串</a></li><li><a href="/base-leetcode/移除元素.html" class="sidebar-link">移除元素</a></li><li><a href="/base-leetcode/有效的括号匹配.html" class="sidebar-link">有效的括号匹配</a></li><li><a href="/base-leetcode/长度最小的子数组.html" class="sidebar-link">长度最小的子数组</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="两数之和"><a href="#两数之和" class="header-anchor">#</a> 两数之和</h2> <p>给定一个整数数组 nums 和一个整数目标值 target，
+请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
+你可以假设每种输入只会对应一个答案，并且你不能使用两次相同的元素。
+你可以按任意顺序返回答案。</p> <blockquote><p>示例 1：
+输入：nums = [2,7,11,15], target = 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1]</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Map 验证</span>
+<span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> diff <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>diff<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>diff<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/base-leetcode/合并两个有序数组.html" class="prev">
+        合并两个有序数组
+      </a></span> <span class="next"><a href="/base-leetcode/判断子序列.html">
+        判断子序列
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.621b4cb4.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/17.5f96f4b0.js" defer></script>
+  </body>
+</html>
